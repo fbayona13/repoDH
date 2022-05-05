@@ -13,7 +13,11 @@
 
         git remote add origin https://github.com/DH/repoRemoto --> apunta al repositorio remoto, en Github.
 
-    
+        git add --> agrega los archivos que queremos subir al remoto 
+        git add . --> agrega todos los archivos 
+        git commit -m "" --> commitea los cambios de los archivos 
+        git push origin main --> envia los archivos al repositorio remoto
+        git status --> seguimiento del estado de los archivos 
 
 
 
