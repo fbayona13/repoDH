@@ -1,0 +1,18 @@
+[
+  {
+    "titulo": "Repasar Javascript",
+    "estado": "Completada"
+  },
+  {
+    "titulo": "Hacer una app de tareas",
+    "estado": "Pendiente"
+  },
+  {
+    "titulo": "Break",
+    "estado": "Pendiente"
+  },
+  {
+    "titulo": "Nueva tarea",
+    "estado": "Pendiente"
+  }
+]
