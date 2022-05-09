@@ -26,6 +26,6 @@ let autos = [
     cuotas : 14,
     vendido : false,
     },
-]
+];
 
 module.exports = autos;
