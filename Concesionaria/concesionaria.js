@@ -1,4 +1,6 @@
 let autos = require ('./autos');
+let persona = require ('./persona');
+
 
 let concesionaria = {
     patente : function (){
@@ -35,7 +37,7 @@ let concesionaria = {
 
     },
 
-    // venderAutos : function (numPatente){
+    // venderAuto : function (numPatente){
     //     let autoVender = this.buscarAuto(numPatente);
     //     let cambioEstado = autos.map(autos => autos == autoVender ? Object({...autos, vendido: true}) : autos);
 
@@ -57,19 +59,43 @@ let concesionaria = {
         let autosDisponibles = autos.filter(function (auto){
             return auto.vendido == false;
         })
+
         return autosDisponibles;
     },
 
     autosNuevos : function (){
         let autosKm = this.autosParaLaVenta();
+
         return autosKm.filter(auto => auto.km < 100)
+    },
+
+    listaDeVentas : function(){
+        let precioVenta = [];
+        autos.forEach(auto => auto.vendido == true ? precioVenta.push(auto.precio) : " ");
+
+        return precioVenta;
+    },
+
+    totalDeVentas : function (){
+        let ventas = this.listaDeVentas();
+        let total = ventas.reduce((total, ventas) => total = total + ventas, 0);
+
+        return total;
+    },
+
+    puedeComprar : function (auto, persona){
+        let costoCuota = 0;
+        autos.forEach(a => auto ? costoCuota = a.precio / a.cuotas : " ");
+        return costoCuota;
+        
     },
 
 
     autos : autos,
+    persona : persona,
 }
 
 // console.log (concesionaria.patente);
 // console.log (concesionaria.vendido);
 // console.log (concesionaria.autos);
-//console.log (concesionaria.venderAutos('JJK116'));
+console.log (concesionaria.puedeComprar());

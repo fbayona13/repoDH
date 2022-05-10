@@ -10,7 +10,7 @@ let autos = [
 
     precio : 150000,
     cuotas : 12,
-    vendido : false,
+    vendido : true,
     },
 
     {
@@ -24,7 +24,7 @@ let autos = [
 
     precio : 100000,
     cuotas : 14,
-    vendido : false,
+    vendido : true,
     },
 ];
 
