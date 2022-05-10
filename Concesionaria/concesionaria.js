@@ -84,10 +84,22 @@ let concesionaria = {
     },
 
     puedeComprar : function (auto, persona){
-        let costoCuota = 0;
-        autos.forEach(a => auto ? costoCuota = a.precio / a.cuotas : " ");
-        return costoCuota;
-        
+        let costoCuota = auto.precio / auto.cuotas;
+
+        if (costoCuota > persona.capacidadDePagoEnCuotas || auto.precio > persona.capacidadDePagoTotal){
+            
+            return false;
+        } else {
+            
+            return true;
+        }
+    },
+
+    autosQuePuedeComprar : function(persona){
+        let autosVenta = this.autosParaLaVenta();
+        let opciones = autosVenta.filter (auto => this.puedeComprar(auto, persona));
+
+        return opciones;
     },
 
 
