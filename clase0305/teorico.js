@@ -29,16 +29,22 @@
   
 /*************************************************************************** */
 
-// let estudiantes = [
-//     {nombre: 'John', promedio: 8.5, aprobado: true},
-//     {nombre: 'Jane', promedio: 7, aprobado: true},
-//     {nombre: 'June', promedio: 3, aprobado: false},
-// ]
+let estudiantes = [
+    {nombre: 'John', promedio: 8.5, aprobado: true},
+    {nombre: 'Jane', promedio: 7, aprobado: true},
+    {nombre: 'June', promedio: 3, aprobado: false},
+]
 
 // let aprobados = estudiantes.filter(estudiantes => estudiantes.aprobado == true);
 
 // let desaprobados = estudiantes.filter(estudiantes => estudiantes.aprobado == false);
 
+// Otra forma de hacerlo
+// let aprobados = estudiantes.filter(function(apr){
+//     if (apr.aprobado == true){
+//       return estudiantes;
+//     }
+//     });
 
 // console.log(aprobados);
 // console.log(desaprobados);
