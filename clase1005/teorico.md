@@ -15,7 +15,7 @@
         NO NECESITAN SABER PROGRAMAR
         product owner --> la voz del cliente, decisiones finales del producto. Escribe historias de usuarios y backlog
         scrum master --> responsable de controlar y ayuda a eliminar obstaculos. Organiza. No es jefe de equipo.
-        
+
         ---------------------------------------------------------
 
         NECESITAN SABER PROGRAMAR
@@ -32,9 +32,9 @@
 
             -story
             -to do
-            -en progreso (solo permite una tarea por persona)
-            -a verificar
-            -terminadas
+            -in progress (solo permite una tarea por persona)
+            -verification
+            -finished
         
         user story --> define que es lo que se tiene que hacer. "como [usuario] quiero [objetivo] para poder [beneficio]"
 
@@ -48,3 +48,8 @@
 
         Retrospectiva --> como se sintieron con el proyecto, como mejorar, como se sintieron en el equipo. Optimizacion de trabajo. 
 
+    HERRAMIENTAS 
+
+        Trello --> gestor de proyectos (ver atlassian)
+        clickup 
+        asana 
