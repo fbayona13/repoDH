@@ -44,4 +44,3 @@
         - Tenemos que pensar en la estructura header / body / footer
         - Tenemos que pensar en todas las paginas (pagina principal, formulario de log in, detalle del producto, etc.)
         
-    
