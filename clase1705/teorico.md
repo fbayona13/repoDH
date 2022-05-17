@@ -60,3 +60,34 @@ HTTPS --> es el protocolo HTTP mejorado. El servidor codifica la sesion con un c
 
     Un framework es un entorno de trabajo que trae resueltas una serie de tareas, automatizando asi el desarrollo de cualquier aplicacion.
 
+**SERVIDORES WEB CON EXPRESS**
+    Para levantar un servidor con express tenemos que usar el metodo listen 
+
+        const express = require ('express');
+        const app = express();
+        app.listen(3000, () => {
+            console.log ('Servidor corriendo');
+        });
+
+    Si ahora abriesemos localhost:3000 veriamos un error 'cannot get /', y es porque todavia no especificamos una ruta. Para resolverlo:
+
+        app.get('/', (req, res) => {
+            res.send ('Hola mundo');
+        });
+    
+**INTRODUCCION A ROUTING Y RESPONSE**
+    Route System --> Definir como responde nuestra aplicacion a los distintos request que hace un cliente.
+
+        app.METHOD(PATH, HANDLER);
+            - app --> variable que guarda la ejecucion de Express
+            - METHOD --> es el metodo de HTTP que queremos atender 
+            - PATH --> es un string que lleva el nombre de la ruta en si 
+            - HANDLER --> callback, que sucede cuando accedemos a esa ruta
+        
+        ejemplo) app.get('/contact', function (req, res){res.send('Algo')});
+            - el callback se encarga de que es lo que sucede una vez hecha la peticion del cliente
+            - req --> es el pedido, es un objeto literal
+            - res --> es la respuesta, es un objeto literal
+            - {} --> la logica que va a manejar la ruta. Lo mas comun es armar la respuesta que va a ver el cliente en su navegador.
+
+
