@@ -62,5 +62,3 @@ app.get('/curso', (req, res) => res.send('/Curso'));
 //El html tiene que ser absoluto, por lo que usamos path.resolve
 app.get('/', (req, res) => res.sendFile(path.resolve(__dirname, './views/hola.html')));
 
-
-
