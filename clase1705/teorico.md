@@ -90,4 +90,36 @@ HTTPS --> es el protocolo HTTP mejorado. El servidor codifica la sesion con un c
             - res --> es la respuesta, es un objeto literal
             - {} --> la logica que va a manejar la ruta. Lo mas comun es armar la respuesta que va a ver el cliente en su navegador.
 
+**ESTRUCTURA DE CARPETAS**
+    Inicialmente empezamos con 2 carpetas: public y scr
+
+        mkdir public src
+            - mkdir --> para crear carpetas por terminal
+            - src --> toda la logica de la aplicacion
+            - public --> todos los recursos que vamos a usar (fotos, imagenes, fuentes, logos)
+    
+    dentro de public vamos a tener css y assets
+
+        mkdir css assets
+            - css --> estilos graficos y beautify
+            - assets --> los recursos (fotos, imagenes, fuentes, logos)
+    
+    dentro de src vamos a tener views y index.js
+
+        mkdir views
+            - views --> distintas vistas html que vamos a tener 
+    
+
+    TRUCO_1)
+    Vamos a hacer un script para la terminal. Para ahorrarnos el trabajo de escribir "node src/index.js"
+    En package.json:
+
+        "scripts": {
+            "test": "node src/index.js"
+        },
+
+    Ahora solo por terminal tenemos que poner
+
+        npm test
+    
 
