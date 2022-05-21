@@ -1,5 +1,6 @@
 **INTRODUCCION A HTML**
 Es la estructura de las paginas webs (lo podriamos pensar como huesos de un cuerpo).
+
 Hyper Text Markup Language --> o lenguaje de marcado de hipertexto, es un estandar para la elaboracion de paginas web. Define una estructura basica y un codigo (HTML) para la definicion de contenido de una pagina web(texto, imagenes, videos, juegos, etc).
 
 **ETIQUETAS Y ATRIBUTOS**
@@ -87,7 +88,7 @@ h = headings --> Representan titulares, van de diferentes tamanos tipograficos n
 
     br = break line --> sirve para generar saltos de linea entre diferentes textos en un parrafo
 
-        <br></br>
+        <br/>
 
 **LISTAS**
 Al igual que en un documento de texto, HTML nos permite generar listas de items.
@@ -131,4 +132,3 @@ Las listas pertenecen a los elementos de bloque (block) dada la distribucion que
             - target: define donde se va a abrir el documento (_blank abre en una pestana nueva)
 
 **INTRODUCCION A SEMANTICA**
-    
