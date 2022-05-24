@@ -132,3 +132,4 @@ Las listas pertenecen a los elementos de bloque (block) dada la distribucion que
             - target: define donde se va a abrir el documento (_blank abre en una pestana nueva)
 
 **INTRODUCCION A SEMANTICA**
+    Semantica --> estudio de diferentes aspectos 

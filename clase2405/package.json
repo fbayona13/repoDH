@@ -1,8 +1,8 @@
 {
-  "name": "mercadoliebre",
+  "name": "clase2405",
   "version": "1.0.0",
-  "description": "Mercado Liebre",
-  "main": "index.js",
+  "description": "prueba de express",
+  "main": "app.js",
   "scripts": {
     "test": "node src/index.js"
   },
