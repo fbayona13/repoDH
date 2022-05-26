@@ -1,0 +1,58 @@
+/*Formas mas usuales de clases de estilos*/
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 span{
+    font-family: serif;
+    font-weight: bold;
+}
+
+p{
+    font-family: cursive;
+}
+
+.cursive{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#destacado{
+    background-color: red;
+}
+
+/*Libreria de iconos --> fontawesome.com, https: //cdnjs.com/libraries */
+/*
+    Colors name
+        black
+        white
+        red
+        green
+    
+    Hex colors 
+        #FFFFFF
+        #000000
+        #FCFCFC
+        #FF0000
+
+    RGB colors
+        rgb(0, 255, 0)
+        rgb(0, 0, 0)
+        rgb(255, 0, 0)
+        rgb(0, 0, 255)
+    
+    para transparencias
+        rgba(255, 0, 0, 1)
+            donde el cuarto numero es alpha --> 0 es transparente, 1 es full color
+    
+    HSL color --> varia brillo, saturacion y tono
+        hsl(366, 100%, 50%)
+            donde el primer numero es el color, el segundo y tercero la saturacion, 
+
+    HSLA color --> agrega el valor de la transparencia 
+        hsla(366, 100%, 50%, .25)
+        
+*/
