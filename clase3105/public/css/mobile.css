@@ -1,0 +1,63 @@
+*{
+    border: none;   
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    background-color: grey;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    /*para definir el espacio entre elementos podemos usar*/
+    gap: 1rem;
+    /*
+    flex-flow: row wrap; permite hacer wrap y direction en uno solo
+    */
+}
+
+nav a{
+    background-color: #000;
+    color: white;
+    flex-grow: 1;
+    flex-basis: 25vw;
+}
+
+#parrafo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 20vw;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    text-align: center;
+}
+
+#parrafo2 {
+    height: 10vh;
+    width: 20vw;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+#parrafo3 {
+    height: 10vh;
+    width: 20vw;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    text-align: center;
+}
+
