@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/forms.css" />
+  </head>
+  <body>
+    <h1>Hola mundo</h1>
+
+    <!-- PROPIEDADES DE FORM
+    action= a donde va a viajar la informacion
+    method= get / post
+    enctype= siempre que se tenga que cargar un archivo
+    -->
+
+    <!--el metodo get se evidencia en el url lo que ponemos en la barra de busqueda-->
+    <form action="/" method="get">
+      <input type="text" name="name" id="" />
+    </form>
+
+    <!--el metodo post no se ve, se usa para logins o info que no queremos mostrar-->
+    <form action="/" method="post">
+      <input type="text" name="name" id="" />
+    </form>
+
+    <form action="/" method="get">
+      <fieldset>
+        <!--indica que va a haber un campo para hacer algo en concreto. No es obligatorio-->
+        <legend>
+          <!--es una leyenda que indica de que es el campo. No es necesario-->
+          Usuario
+        </legend>
+
+        <!--el INPUT es todo con lo que puedo interactuar en el formulario. 
+            El name y el id no pueden faltar en ningun input
+            El required hace que formulario tiene que ser rellenado
+            El placeholder es el texto que aparece en la barra y desaparece cuando vamos a buscar
+            El type determina que podemos hacer con el formulario
+                type= text
+                type= number
+                type= checkbox
+                type= radio
+                type= range
+                type= password
+                type= color
+                type= hidden //no se ve en el formulario, pero si envia informacion
+                type= email
+        -->
+        <input type="text" name="search" id="searchField" />
+
+        <!--por cada input necesitamos un label, es como una etiqueta que nos permite activar el input en concreto.
+            El for lleva el id del input-->
+        <label for="searchField"></label>
+
+        <!--sirve para seleccionar parametros concretos, a travez de opciones-->
+        <select name="genero" id="genero">
+            <option value="M">Masc</option>
+            <option value="F">Fem</option>
+            <option value="NB">NonBinary</option>
+        </select>
+
+        <!--un pedazo de texto para que el usuario escriba-->
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+        <!--los button deberia existir solo en los formularios. Ya que nos permite interactuar con este
+            Tambien tiene type que puede variar dependiendo lo que queramos hacer   
+        -->
+        <button type="button"><i class="fa-solid fa-search"></i></button>
+
+        
+      </fieldset>
+    </form>
+
+  </body>
+</html>
+
+<!--Los formularios se usan para todo, para los filtros, login, barra de busqueda, opciones de ordenamiento-->

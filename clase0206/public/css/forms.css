@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+form fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 0.25rem;
+
+}
+
+form fieldset button{
+    background-color: snow;
+    flex-basis: 3rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+
+}
+
+form fieldset input{
+    flex-grow: 1;
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: black;
+    color: snow;
+    border-radius:  1.5rem 0 0 1.5rem;
+}
+
+form fieldset input :focus{
+    background-color: rgb(187, 107, 3);
+    color: black;
+}
+
+form fieldset input ::placeholder{
+    color: rgb(187, 107, 3);
+}
