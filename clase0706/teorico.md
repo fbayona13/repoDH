@@ -4,6 +4,8 @@ Sirve para solucionar problemas como el superposicionamiento de elementos.
 
         position: static;
 
+        position: sticky;
+
         position: fixed;
             cuando queremos que el elemento quede fijo en la posicion del sitio web y siga al usuario a medida que se desplaza
 
@@ -38,7 +40,7 @@ z-index funcionara solo en los elementos posicionados (position).
 
 **TRANSICIONES**
 Efectos que le podemos dar a determinados elementos en determinadas acciones.
-Esto lo conseguimos gracias a :hover
+Esto lo conseguimos gracias a :hover --> que es una pseudoclase
 
         buttom{
             color
@@ -93,3 +95,5 @@ Esto lo conseguimos gracias a :hover
             animation-itiration-count: infinite; //cantidad de veces que se reproducira la animacion
             animation-duration: alternate; //como se vera la animacion cuando se este reproduciendo
         }
+    
+    Los iconos e imagenes se pueden animar! (todo se puede animar)

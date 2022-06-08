@@ -1,0 +1,105 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  background-color: hsl(200, 100%, 75%);
+  min-height: 100vh;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  padding-top: calc(15vh + 1rem);
+}
+
+/*EJEMPLO DE POSITION ABSOLUTE + RELATIVE*/
+span.position {
+  background-color: hsl(300, 100%, 50%);
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+}
+
+section {
+  background-color: snow;
+  width: 25vw;
+  height: 50vh;
+  position: relative;
+}
+
+/*EJEMPLO DE POSITION: FIXED*/
+span.different {
+  background-color: hsl(345, 100%, 50%);
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+/*EJEMPLO Z-INDEX*/
+article {
+  background-color: hsl(200, 100%, 30%);
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: auto;
+  left: auto;
+  z-index: 1;
+}
+
+/*EJEMPLO DE ANIMACION*/
+span.animation {
+  background-color: hsl(0, 0%, 100%);
+  height: 2rem;
+  width: 2rem;
+  animation-name: rainbow;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: alternate;
+  animation-delay: 1000ms;
+}
+
+@keyframes rainbow {
+  /*
+    0%{
+        background-color: hsl(0, 100%, 50%);
+    }
+
+    25%{
+        background-color: hsl(30, 100%, 50%);
+    }
+        
+    50%{
+        background-color: hsl(60, 100%, 50%);
+    }
+  
+    75%{
+        background-color: hsl(90, 100%, 50%);
+    }
+    
+    100%{
+        background-color: hsl(120, 100%, 50%);
+    }
+    */
+  to {
+    background-color: hsl(0, 100%, 50%);
+  }
+
+  from {
+    background-color: hsl(250, 100%, 50%);
+  }
+}
+
+
+/*EJEMPLO DE TRANSICION*/
+nav {
+  background-color: hsl(0, 0%, 100%);
+  height: 2rem;
+  width: 2rem;
+  transition: all 500ms ease-in-out;
+}
+
+nav:hover{
+    background-color: brown;
+}
