@@ -68,9 +68,3 @@
         flex-grow--> le permite al item crecer en caso de disponer espacio libre en el contenedor
             flex-grow: 1; //si dos items tienen valor 1, abarcaran el espacio libre en partes iguales
 
-
-microdesafio paso 2
-wrap
-basis 100 mobile
-basis 50 tablet
-basis 25 desktop
