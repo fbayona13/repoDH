@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  background-color: rgb(194, 193, 193);
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 9;
+  background-color: rgb(230, 121, 20);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+}
+
+#heather-top {
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#heather-top #brand {
+  flex: 0 0 calc(45% - 2rem);
+  display: flex;
+  justify-content: center;
+}
+
+#heather-top #form-search {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: snow;
+  border-radius: 3rem;
+}
+
+#header-top article {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header-top #brand a {
+  flex-grow: 1;
+}
+
+#header-top #form-search fieldset{
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-top #form-search fieldset input{
+    padding: 0 .25rem;
+    border-radius: .25rem 0 0 .25rem;
+    flex-grow: 1;
+}
+#header-top #form-search fieldset button{
+    padding: 0 .25rem;
+    width: 3rem;
+    background-color: blue;
+    border-radius: 0 25% 25% 0;
+    padding: .25rem;
+}
+
+#header-bottom nav{
+    display: none;
+}
+#burguer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
