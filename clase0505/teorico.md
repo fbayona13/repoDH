@@ -21,4 +21,3 @@
 
     FORKS: es clonar el repo con otro nombre y modificarlo.
     ISSUES: es para sugerir cambios en la comunidad 
-

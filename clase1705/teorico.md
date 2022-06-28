@@ -90,7 +90,29 @@ HTTPS --> es el protocolo HTTP mejorado. El servidor codifica la sesion con un c
             - res --> es la respuesta, es un objeto literal
             - {} --> la logica que va a manejar la ruta. Lo mas comun es armar la respuesta que va a ver el cliente en su navegador.
 
-**ESTRUCTURA DE CARPETAS**
+
+**ENVIANDO ARCHIVOS AL NAVEGADOR**
+    
+        Esto:
+        app.get ('/', (req,res) => {
+            res.send('texto');
+        })
+
+        Es diferente a:
+        app.get ('/', (req,res) => { 
+            res.sendFile('../../texto.html')
+        })
+    
+    Con esta linea de codigo, lo que podemos hacer es mandar archivos HTML al navegador. La ruta debe ser absoluta (modulo nativo path)
+        
+        const path = require ('path')
+        app.get ('/', (req,res) => { 
+            res.sendFile (path.resolve(__dirname, '../../texto.html'));
+        })
+
+
+
+**ESTRUCTURA DE CARPETAS (clase en vivo)**
     Inicialmente empezamos con 2 carpetas: public y scr
 
         mkdir public src
@@ -122,4 +144,3 @@ HTTPS --> es el protocolo HTTP mejorado. El servidor codifica la sesion con un c
 
         npm test
     
-

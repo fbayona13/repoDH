@@ -132,4 +132,20 @@ Las listas pertenecen a los elementos de bloque (block) dada la distribucion que
             - target: define donde se va a abrir el documento (_blank abre en una pestana nueva)
 
 **INTRODUCCION A SEMANTICA**
-    Semantica --> estudio de diferentes aspectos 
+    Semantica --> estudio de diferentes aspectos del significado, sentido o interpretacion de diferentes signos linguisticos. En HTML hace referencia a las buenas practicas que podemos llevar a cabo para que le sea mas facil (y mejor) de interpretar a un buscador
+
+    - usos de titulares
+        h1 --> titulo principal
+        h2 --> subtitulo
+    
+    - <div> --> Se dejo de usar tanto, ahora tenemos mas etiquetas para evitar redundancias
+        - <header> --> cabecera
+        - <nav> --> barra de navegacion
+        - <footer> --> pie de pagina 
+        - <section> --> seccion de contenido monotematica (header y footer si fuera necesario)
+        - <article> --> porcion de contenido dentro de un section
+
+**ESTRUCTURA DE UN SITIO WEB**
+    1) Contenedores de elementos / contenido
+    2) Dentro de los contenedores podemos meter mas contenedores 
+    3) La primer pagina html se llama index.html
