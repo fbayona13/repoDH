@@ -67,4 +67,7 @@
 **FOREIGN KEYS**
     Es una constraint que permite a una columna de una tabla guarde como valor un dato particular que referencia a otra tabla. Conectandolas asi una con la otra. La foreign key de una tabla suele ser la primary key en la otra tabla.
 
+**ANOTACIONES EN VIVO**
+
+    Nos importa Apache + mariaDB
     
